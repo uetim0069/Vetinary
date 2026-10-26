@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Unfailing Veterinary &amp; Pest Control Services</title>
+<meta name="description" content="Veterinary care, farm consultancy, pest control and quality animal-health products with nationwide delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{ink:'#04060f',card:'#080b17',line:'#1c2233',mute:'#8d93a5',brand:'#8547e0',maroon:'#7a2323',leaf:'#14401f'},fontFamily:{sans:['Outfit','system-ui','sans-serif']}}}}
+</script>
+<style type="text/tailwindcss">
+@layer components{
+ .btn{@apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand px-6 py-3 font-medium text-white shadow-[0_4px_0_#5f2fb0] transition hover:brightness-110 active:translate-y-0.5 active:shadow-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand disabled:opacity-60}
+ .btn-maroon{@apply bg-maroon shadow-[0_4px_0_#4d1414]}
+ .btn-ghost{@apply border border-line bg-transparent shadow-none hover:bg-white/5}
+ .card{@apply rounded-3xl border border-line bg-card}
+ .field{@apply w-full rounded-xl border border-line bg-ink px-4 py-3 text-white placeholder:text-mute focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40}
+ .h2{@apply text-[clamp(1.6rem,5.5vw,2.25rem)] font-semibold leading-tight tracking-tight}
+ .sub{@apply mt-3 max-w-2xl text-base text-mute sm:text-lg}
+ .ib{@apply relative grid h-10 min-w-10 shrink-0 place-items-center whitespace-nowrap rounded-xl border border-line px-2.5 text-sm text-white hover:bg-white/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand sm:h-11 sm:min-w-11 sm:px-3 sm:text-base}
+}
+</style>
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#04060f;z-index:40}
+summary::-webkit-details-marker{display:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="overflow-x-hidden bg-ink font-sans text-white antialiased">
+
+<header class="sticky top-[env(safe-area-inset-top,0px)] z-30 border-b border-line bg-ink/90 backdrop-blur">
+ <div class="mx-auto flex max-w-6xl items-center justify-between gap-2 px-3 py-2.5 sm:gap-3 sm:px-6 sm:py-3">
+  <button onclick="show('home')" class="flex min-w-0 items-center gap-1.5 rounded-lg bg-white px-2 py-1 text-left sm:gap-2 sm:px-3 sm:py-1.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand" aria-label="Unfailing Veterinary &amp; Pest Control Services, home">
+   <b class="text-2xl font-bold leading-none text-leaf sm:text-3xl">U</b>
+   <span class="min-w-0 text-[9px] font-bold uppercase leading-[1.15] text-leaf min-[400px]:text-[10px] sm:text-xs">Unfailing Veterinary &amp; Pest Control Services<small class="mt-0.5 hidden text-[6px] tracking-widest text-red-800 sm:block">PROTECTING HEALTH. PRESERVING SPACES.</small></span>
+  </button>
+  <nav class="flex shrink-0 items-center gap-1.5 sm:gap-2" aria-label="Main">
+   <button onclick="show('store')" class="ib gap-2 border-0" data-ic="store"><span class="hidden text-sm sm:inline">Store</span></button>
+   <button onclick="$('#cart').showModal()" class="ib" aria-label="Open cart" data-ic="cart"><span id="badge" class="absolute -right-1.5 -top-1.5 hidden h-5 min-w-5 place-items-center rounded-full bg-brand px-1 text-xs">0</span></button>
+   <button id="signin" onclick="openAuth('in')" class="ib font-medium">Sign in</button>
+  </nav>
+ </div>
+</header>
+
+<main id="home" class="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+
+ <section class="card mt-6 overflow-hidden">
+  <div class="grid lg:grid-cols-5">
+   <div class="bg-gradient-to-br from-[#eef3ee] to-[#b9c9bb] p-6 text-leaf sm:p-12 lg:col-span-3">
+    <p class="text-sm font-medium text-green-800">Protecting health. Preserving spaces.</p>
+    <h1 class="mt-3 text-[clamp(2rem,8.5vw,3.75rem)] font-bold leading-[1.05] tracking-tight">Unfailing Veterinary &amp; Pest Control Services</h1>
+    <p class="mt-5 max-w-md text-base text-leaf/80 sm:text-lg">Expert veterinary care and advanced pest control solutions you can trust. Safe. Effective. Reliable.</p>
+    <div class="mt-8 flex flex-wrap gap-3">
+     <a href="#packages" class="rounded-xl bg-leaf px-5 py-3 font-medium text-white hover:bg-green-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf">Our services</a>
+     <a href="https://wa.me/2347066306559?text=Hello%2C%20I%27d%20like%20a%20quote." class="rounded-xl border border-leaf/30 px-5 py-3 font-medium hover:bg-white/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf">Request a quote</a>
+    </div>
+   </div>
+   <ul class="grid content-center gap-4 bg-leaf p-6 sm:p-12 lg:col-span-2" id="svc"></ul>
+  </div>
+  <div class="flex flex-col items-start justify-between gap-5 p-6 sm:flex-row sm:items-center sm:p-10">
+   <div><h2 class="text-2xl font-semibold sm:text-3xl">Find your pet’s plan</h2><p class="mt-2 text-mute">Trusted veterinary care and quality pet products, all in one place.</p></div>
+   <a class="btn shrink-0" href="#packages">Get started</a>
+  </div>
+ </section>
+
+ <section class="card mt-6 flex flex-col justify-between gap-6 p-6 sm:flex-row sm:items-center sm:p-10">
+  <div><h2 class="text-[clamp(2rem,8vw,3rem)] font-bold leading-tight tracking-tight">Deliveries nationwide</h2><p class="mt-2 text-mute">Hotline, available 24/7</p></div>
+  <div class="flex flex-wrap items-center gap-3">
+   <a href="tel:+2347066306559" class="text-[clamp(1.4rem,6vw,1.875rem)] font-medium underline decoration-2 underline-offset-8">+234 7066306559</a>
+  </div>
+ </section>
+
+ <section class="mt-16 grid items-center gap-10 lg:grid-cols-2">
+  <div>
+   <h2 class="h2">Unfailing Veterinary Services</h2>
+   <p class="mt-5 max-w-prose text-lg leading-relaxed text-mute">With over 30 years of experience, we provide reliable veterinary services and farm solutions designed to help farmers and animal owners achieve healthier animals and better results. From veterinary drugs and farm equipment to monthly care packages, farm consultancy, preventive healthcare, and professional veterinary support, we provide the products, expertise, and guidance you need to care for your animals and manage your farm with confidence. Whether you are a smallholder farmer or run a commercial farm, we’re here to help.</p>
+   <div class="mt-8 grid gap-3 sm:max-w-sm">
+    <a class="btn btn-maroon" href="#packages">Get farm care package</a>
+    <a class="btn" href="#" onclick="show('store');return false">View products</a>
+   </div>
+  </div>
+  <!-- Swap this panel for a team photo: <img src="team.jpg" alt="..." class="aspect-[4/3] w-full rounded-3xl object-cover"> -->
+  <div class="flex aspect-[4/3] flex-col justify-end rounded-3xl border border-line bg-gradient-to-br from-leaf to-[#0b2412] p-8">
+   <p class="text-[clamp(2.5rem,12vw,4.5rem)] font-bold leading-none tracking-tight">Since 1993</p>
+   <p class="mt-2 text-lg text-white/70">Veterinary care and farm solutions you can count on.</p>
+  </div>
+ </section>
+
+ <section class="mt-20">
+  <h2 class="h2 max-w-3xl">The numbers behind our commitment to better pet care</h2>
+  <p class="sub">See the reach and impact of our veterinary services.</p>
+  <div id="stats" class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"></div>
+  <p class="mt-6 text-mute">Trusted and approved: certified by VCN, NVMA, EHORECON and CAC.</p>
+ </section>
+
+ <section id="packages" class="mt-20">
+  <h2 class="h2">Unfailing packages 📦</h2>
+  <p class="sub">Choose the plan that best fits your animal’s needs. Our flexible care options provide reliable veterinary services, quality products, and professional support at every stage of your animal’s health journey.</p>
+  <div id="plans" class="mt-10 grid gap-5 lg:grid-cols-3"></div>
+ </section>
+
+ <section class="mt-20">
+  <h2 class="h2">Client testimonials</h2>
+  <p class="sub">After your purchase, feel free to drop a review on WhatsApp or by email at <a href="mailto:Yenexobot@gmail.com" class="text-white underline decoration-mute underline-offset-4">Yenexobot@gmail.com</a>.</p>
+  <div id="tests" class="mt-10 grid gap-5 md:grid-cols-2"></div>
+ </section>
+
+ <section class="mt-20 rounded-3xl border border-line bg-gradient-to-br from-[#1e1d3d] to-ink p-8 text-center sm:p-14">
+  <h2 class="h2">Partnership packages</h2>
+  <p class="sub mx-auto">Build a reliable animal-care partnership with a veterinary team committed to quality service, professional support, and affordable solutions.</p>
+  <a class="btn btn-maroon mt-8 w-full sm:w-auto sm:px-12" href="https://wa.me/2347066306559?text=Hello%2C%20I%27d%20like%20to%20become%20a%20partner.">Become a partner</a>
+ </section>
+
+ <section class="mt-20">
+  <h2 class="h2">Meet our veterinary team</h2>
+  <p class="sub">Experienced professionals dedicated to the health, wellbeing, and quality of life of every animal we serve.</p>
+  <ul class="mt-8 flex flex-wrap gap-3" id="creds"></ul>
+  <div class="card mt-6 flex items-center gap-5 p-6 sm:max-w-md">
+   <div class="grid size-16 shrink-0 place-items-center rounded-full bg-leaf text-xl font-semibold">EO</div>
+   <p class="text-2xl font-light">Dr. Emmanuel Obot</p>
+  </div>
+ </section>
+
+ <section class="mt-20">
+  <h2 class="h2">Frequently asked questions</h2>
+  <div id="faq" class="mt-8 max-w-3xl divide-y divide-line border-y border-line"></div>
+ </section>
+
+ <section class="card mt-20 p-8 text-center sm:p-14">
+  <h2 class="h2">Stay updated on pet &amp; animal care 🐾</h2>
+  <p class="sub mx-auto">Get animal-health tips, veterinary updates, new products, special offers, and important pet-care information in your inbox.</p>
+  <form onsubmit="sub(event)" class="mx-auto mt-8 flex max-w-xl flex-col gap-3 sm:flex-row">
+   <input class="field" type="email" name="email" required placeholder="email@example.com" aria-label="Email address" autocomplete="email">
+   <button class="btn shrink-0" type="submit">Subscribe</button>
+  </form>
+  <p id="nmsg" role="status" class="mt-3 min-h-6 text-sm text-mute"></p>
+ </section>
+</main>
+
+<main id="store" class="mx-auto hidden max-w-6xl px-4 pb-16 sm:px-6">
+ <nav class="my-6 text-mute" aria-label="Breadcrumb"><a href="#" onclick="show('home');return false" class="hover:text-white">Unfailing</a> <span class="mx-2">/</span> <b class="font-normal text-white">Store</b></nav>
+ <section class="rounded-3xl border border-line bg-gradient-to-b from-[#1a1038] to-[#0b0a1c] p-6 sm:p-10">
+  <div class="grid size-24 place-items-center rounded-full border-4 border-ink bg-white text-sm font-bold text-leaf">UV</div>
+  <h1 class="mt-4 text-3xl font-semibold">Unfailing Veterinary Services</h1>
+  <p class="mt-1 text-mute">@unfailing-veterinary-services, <span id="pc">8</span> products</p>
+  <p id="desc" class="mt-4 line-clamp-2 max-w-2xl text-mute">Unfailing Door Dash is your trusted online partner for fast, reliable veterinary supply and delivery across Nigeria.</p>
+  <button onclick="$('#desc').classList.toggle('line-clamp-2')" class="mt-2 text-brand hover:underline">Read more</button>
+  <div class="mt-6 flex gap-3">
+   <a class="ib size-12 rounded-full" href="https://wa.me/2347066306559" aria-label="WhatsApp" data-ic="wa"></a>
+   <a class="ib size-12 rounded-full" href="mailto:Yenexobot@gmail.com" aria-label="Email" data-ic="mail"></a>
+   <a class="ib size-12 rounded-full" href="tel:+2347066306559" aria-label="Call" data-ic="phone"></a>
+  </div>
+ </section>
+ <label class="mt-6 flex items-center gap-3 rounded-2xl border border-line bg-[#101424] px-5 py-4 text-mute focus-within:ring-2 focus-within:ring-brand/50">
+  <span data-ic="search"></span><input id="q" type="search" placeholder="Search products" aria-label="Search products" class="min-w-0 flex-1 bg-transparent text-white outline-none placeholder:text-mute">
+ </label>
+ <p class="my-5 text-mute"><span id="pc2">8</span> products</p>
+ <div id="grid" class="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4"></div>
+ <p id="none" class="hidden py-16 text-center text-mute">No products match your search. Try a different name.</p>
+</main>
+
+<footer class="border-t border-line px-4 py-10 text-center text-sm text-mute">
+ <p>© Unfailing Veterinary &amp; Pest Control Services</p>
+ <p class="mt-2"><a class="hover:text-white" href="tel:+2347066306559">+234 7066306559</a>, <a class="hover:text-white" href="mailto:Yenexobot@gmail.com">Yenexobot@gmail.com</a></p>
+</footer>
+
+<dialog id="cart" class="m-0 ml-auto hidden h-dvh max-h-none w-full max-w-md flex-col border-l border-line bg-ink p-0 text-white open:flex backdrop:bg-black/70">
+ <div class="flex items-center justify-between border-b border-line p-5"><h2 class="flex items-center gap-3 text-2xl font-semibold"><span data-ic="cart"></span>Your cart</h2><button onclick="$('#cart').close()" class="ib" aria-label="Close cart" data-ic="x"></button></div>
+ <div id="dbody" class="flex-1 overflow-auto p-5"></div>
+ <div id="total" class="hidden space-y-4 border-t border-line p-5">
+  <div class="flex justify-between text-xl"><span>Total</span><b id="tv"></b></div>
+  <a id="order" target="_blank" rel="noopener" class="btn w-full">Order on WhatsApp</a>
+ </div>
+</dialog>
+
+<dialog id="auth" class="m-auto w-[calc(100%-2rem)] max-w-md rounded-3xl border border-line bg-card p-0 text-white backdrop:bg-black/70 backdrop:backdrop-blur-sm">
+ <div class="p-6 sm:p-8">
+  <div class="mb-6 flex items-start justify-between"><h2 id="atitle" class="text-2xl font-semibold">Sign in</h2><button onclick="$('#auth').close()" class="rounded-lg p-1 text-mute hover:text-white" aria-label="Close" data-ic="x"></button></div>
+  <div role="tablist" class="mb-6 grid grid-cols-2 rounded-xl bg-ink p-1 text-sm">
+   <button id="t-in" role="tab" onclick="tab('in')" class="rounded-lg py-2 font-medium">Sign in</button>
+   <button id="t-up" role="tab" onclick="tab('up')" class="rounded-lg py-2 font-medium">Sign up</button>
+  </div>
+  <p id="aerr" role="alert" class="mb-4 hidden rounded-lg bg-red-950/60 px-3 py-2 text-sm text-red-300"></p>
+  <form id="f-in" onsubmit="go(event,'/api/auth/login')" class="space-y-4">
+   <label class="block text-sm"><span class="mb-1 block text-mute">Email</span><input class="field" type="email" name="email" required autocomplete="email"></label>
+   <label class="block text-sm"><span class="mb-1 block text-mute">Password</span><input class="field" type="password" name="password" required autocomplete="current-password"></label>
+   <button class="btn w-full" type="submit">Sign in</button>
+  </form>
+  <form id="f-up" onsubmit="go(event,'/api/auth/signup')" class="hidden space-y-4">
+   <label class="block text-sm"><span class="mb-1 block text-mute">Full name</span><input class="field" name="full_name" required minlength="2" maxlength="120" autocomplete="name"></label>
+   <label class="block text-sm"><span class="mb-1 block text-mute">Email</span><input class="field" type="email" name="email" required autocomplete="email"></label>
+   <label class="block text-sm"><span class="mb-1 block text-mute">Phone (optional)</span><input class="field" type="tel" name="phone" placeholder="+234…" autocomplete="tel"></label>
+   <label class="block text-sm"><span class="mb-1 block text-mute">Password</span><input class="field" type="password" name="password" required minlength="8" autocomplete="new-password" aria-describedby="pwh"><span id="pwh" class="mt-1 block text-xs text-mute">At least 8 characters.</span></label>
+   <label class="flex items-start gap-2 text-sm text-mute"><input type="checkbox" name="terms" required class="mt-1 accent-[#8547e0]"> I agree to the terms of service and privacy policy.</label>
+   <button class="btn w-full" type="submit">Create account</button>
+  </form>
+ </div>
+</dialog>
+
+<script>
+const $=s=>document.querySelector(s);
+const IC={cart:'M5 8h14l-1 12H6zM9 8V6a3 3 0 016 0v2M9.5 13a2.5 2.5 0 005 0',store:'M4 9l1.5-5h13L20 9M4 9v11h16V9M4 9h16M10 20v-6h4v6',heart:'M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z',search:'M11 4a7 7 0 100 14 7 7 0 000-14zM20 20l-4-4',x:'M5 5l14 14M19 5L5 19',wa:'M4 20l1.3-4A8 8 0 118 19z',mail:'M3 7l9 6 9-6M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z',phone:'M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zM12 18h.01',plus:'M12 5v14M5 12h14',check:'M5 12l5 5 9-10',spin:'M12 3v5M12 16v5M3 12h5M16 12h5M5.6 5.6l3.5 3.5M14.9 14.9l3.5 3.5M5.6 18.4l3.5-3.5M14.9 9.1l3.5-3.5'};
+const svg=(n,c='size-5')=>`<svg viewBox="0 0 24 24" class="${c} fill-none stroke-current" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${IC[n]}"/></svg>`;
+const icons=r=>(r||document).querySelectorAll('[data-ic]').forEach(e=>{if(!e.querySelector('svg'))e.insertAdjacentHTML('afterbegin',svg(e.dataset.ic,e.dataset.c||'size-5'))});
+const WA='https://wa.me/2347066306559';
+const naira=v=>'₦'+v.toLocaleString('en-NG');
+
+/* ---------- static content ---------- */
+$('#svc').innerHTML=['Veterinary care','Pest control','Safe & reliable','24/7 support'].map(t=>`<li class="flex items-center gap-3 text-lg font-medium text-white"><span class="grid size-8 place-items-center rounded-full bg-white/15">${svg('check','size-4')}</span>${t}</li>`).join('');
+$('#creds').innerHTML=['VCN','Surgeon','Resident Doctor'].map(t=>`<li class="flex items-center gap-2 rounded-full border border-line px-4 py-2 text-lg font-medium"><span class="text-brand">${svg('check','size-4')}</span>${t}</li>`).join('');
+$('#stats').innerHTML=[
+ ['31+ years','In operation since 1993','31+ years of professional Eggsperience.'],
+ ['30k+ clients','Satisfied clients','15k+ animals treated, 3k+ rescued, 15k+ trained.'],
+ ['90–94%','Client satisfaction',''],
+ ['All scales','Small to large-scale farmers','From government institutions and smallholder farms to large commercial farms, we bring practical experience across diverse agricultural operations.']
+].map(([n,t,s])=>`<div class="card p-6"><p class="text-4xl font-bold tracking-tight text-brand">${n}</p><p class="mt-2 text-lg font-medium">${t}</p>${s?`<p class="mt-2 text-sm text-mute">${s}</p>`:''}</div>`).join('');
+$('#plans').innerHTML=[
+ ['Basic Care','24,999',['Routine consultation','Basic vaccination','Deworming','Pet health record']],
+ ['Complete Care','49,999',['Everything in Basic','Advanced consultation','Laboratory screening','Priority appointments']],
+ ['Premium Care','99,999',['Everything in Complete','Comprehensive health screening','Emergency support','Home visits','Priority support']]
+].map(([n,p,f])=>`<div class="card flex flex-col p-8"><h3 class="text-xl font-semibold">${n}</h3><p class="mt-3 text-4xl font-bold tracking-tight">₦${p}<span class="text-base font-normal text-mute">/month</span></p><ul class="mt-6 flex-1 space-y-3 text-mute">${f.map(x=>`<li class="flex gap-3"><span class="mt-0.5 text-brand">${svg('check','size-5 shrink-0')}</span>${x}</li>`).join('')}</ul><a class="btn btn-ghost mt-8" href="${WA}?text=${encodeURIComponent('Hello, I’d like the '+n+' package.')}">Choose ${n}</a></div>`).join('');
+$('#tests').innerHTML=[
+ ['Excellent veterinary care! 🐾❤️','My pet’s recovery has been encouraging, and I’m grateful for the support we received.','Emmanuel Umoh'],
+ ['Quality care at an affordable price! 🐾❤️','Good products, good service, and fair prices. You can tell they genuinely care about the animals. I’m happy with the experience.','Jp Farms'],
+ ['Affordable price','E clinic emi anam akam. Price esie ama enyene, mme staff ẹdiọk ndinam utom. Eyen mi ama ọdọhọ ke idem esie ama ediana','Ekomobong J.'],
+ ['','Very professional and caring staff. They took good care of my cat and explained the treatment properly. I can’t wait for the expansion coming!','Esther J. Okon']
+].map(([t,q,n])=>`<figure class="card flex flex-col justify-between gap-8 p-8">${t?`<p class="font-medium">${t}</p>`:''}<blockquote class="-mt-4 text-lg leading-relaxed text-mute">“${q}”</blockquote><figcaption class="flex items-center gap-4 border-t border-line pt-5"><span class="grid size-12 place-items-center rounded-full bg-[#1a1536] text-lg text-brand">${n[0]}</span><span class="text-lg">${n}</span></figcaption></figure>`).join('');
+$('#faq').innerHTML=[
+ ['What veterinary services do you offer?','Consultations, vaccination, deworming, laboratory screening, surgery, farm consultancy and pest control.'],
+ ['Can I book an appointment with a veterinarian?','Yes. Call or message us on WhatsApp to book a time.'],
+ ['How long does the package last?','Packages run monthly and can be renewed each month.'],
+ ['Do you treat both pets and farm animals?','Yes, we care for pets, livestock and poultry.'],
+ ['Can I order products without visiting the clinic?','Yes. Order from the store and we deliver nationwide.'],
+ ['Do you offer partnership packages?','Yes. Use the Become a Partner button to get started.'],
+ ['Can I speak directly with a veterinarian?','Yes, call the hotline +234 7066306559.'],
+ ['How can I contact you?','Call or WhatsApp +234 7066306559, or email Yenexobot@gmail.com.'],
+ ['Do I need an appointment before visiting?','Appointments are recommended so we can give you priority.'],
+ ['Where is your office?','Contact us for our current location and directions.'],
+ ['Do you provide vaccination services?','Yes, for pets and farm animals.'],
+ ['Can you help with routine pet health checks?','Yes, routine checks are included in our care packages.'],
+ ['Do you offer home visits?','Home visits are included in the Premium Care package.'],
+ ['How do I become a partner?','Tap Become a Partner and send us a message.'],
+ ['Can I buy products in bulk?','Yes. Contact us for bulk pricing.'],
+ ['Can I buy retail?','Yes, retail purchases are available in the store.']
+].map(([q,a])=>`<details class="group py-1"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg py-4 text-lg font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand">${q}<span class="text-mute transition-transform group-open:rotate-45">${svg('plus')}</span></summary><p class="pb-4 pr-9 text-mute">${a}</p></details>`).join('');
+
+/* ---------- store + cart ---------- */
+const products=[
+ {n:'Medium Mouth Guard',p:800,o:900,d:11},{n:'Kennel Chain Big',p:6000,o:6100,d:2},
+ {n:'Davita Poultry 50g',p:700,o:800,d:13},{n:'Davita Poultry',p:900,o:1000,d:10},
+ {n:'Colla Puppy',p:700,o:800,d:13},{n:'Boosta Plus 1L',p:1800,o:1900,d:5},
+ {n:'20 G Needle (Hyperdermic) Rt.',p:1100,o:1200,d:8},{n:'KC Vit 200ml',p:3100,o:3200,d:3}
+];
+const cart={},saved=new Set();
+function render(){
+ const q=$('#q').value.toLowerCase().trim();
+ const list=products.map((x,i)=>({...x,i})).filter(x=>x.n.toLowerCase().includes(q));
+ $('#grid').innerHTML=list.map(x=>`<article class="flex min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-ink"><div class="relative grid aspect-square place-items-center bg-[#0b0e1d] text-[#4b5266]">${svg('spin','size-14')}<span class="absolute left-3 top-3 rounded-md bg-brand px-2 py-0.5 text-sm font-medium">-${x.d}%</span><button onclick="save(${x.i},this)" aria-pressed="${saved.has(x.i)}" aria-label="Save ${x.n}" class="absolute right-3 top-3 grid size-10 place-items-center rounded-full border border-line bg-ink ${saved.has(x.i)?'text-brand':'text-white'}">${svg('heart')}</button></div><div class="flex flex-1 flex-col p-4"><h3 class="min-h-[2.75rem] break-words text-sm font-semibold uppercase leading-snug sm:text-base">${x.n}</h3><p class="mt-3 text-xl font-semibold sm:text-2xl">${naira(x.p)}</p><p class="text-sm text-mute line-through">${naira(x.o)}</p><p class="mb-4 mt-1 text-xs text-mute">Listed 4 weeks ago</p><button class="btn mt-auto w-full px-3 py-2.5 text-sm sm:text-base" onclick="add(${x.i})">Add to cart</button></div></article>`).join('');
+ $('#pc2').textContent=list.length;$('#none').classList.toggle('hidden',list.length>0);
+}
+function save(i,b){saved.has(i)?saved.delete(i):saved.add(i);b.classList.toggle('text-brand');b.classList.toggle('text-white');b.setAttribute('aria-pressed',saved.has(i))}
+function add(i){cart[i]=(cart[i]||0)+1;upd()}
+function qty(i,d){cart[i]+=d;if(cart[i]<1)delete cart[i];upd()}
+function upd(){
+ const keys=Object.keys(cart),n=keys.reduce((a,k)=>a+cart[k],0),b=$('#badge');
+ b.textContent=n;b.classList.toggle('hidden',!n);b.classList.toggle('grid',!!n);
+ const body=$('#dbody'),tot=$('#total');
+ if(!n){body.innerHTML=`<div class="flex h-full flex-col items-center justify-center gap-3 text-center text-mute"><div class="grid size-28 place-items-center rounded-full bg-[#1a2030]">${svg('cart','size-12')}</div><h3 class="text-2xl text-white">Your cart is empty</h3><p>Add products from the store and they will show up here.</p><button class="btn mt-2" onclick="$('#cart').close();show('store')">Browse the store</button></div>`;tot.classList.add('hidden');return}
+ let sum=0,msg='Hello, I’d like to order:\n';
+ body.innerHTML=keys.map(k=>{const x=products[k],c=cart[k];sum+=x.p*c;msg+=`• ${x.n} × ${c} (${naira(x.p*c)})\n`;return `<div class="flex items-start justify-between gap-4 border-b border-line py-4"><div><p class="font-medium">${x.n}</p><div class="mt-2 flex items-center gap-3"><button onclick="qty(${k},-1)" class="grid size-8 place-items-center rounded-lg border border-line" aria-label="Decrease quantity">−</button><span aria-live="polite">${c}</span><button onclick="qty(${k},1)" class="grid size-8 place-items-center rounded-lg border border-line" aria-label="Increase quantity">+</button><button onclick="qty(${k},-99)" class="ml-2 text-sm text-brand hover:underline">Remove</button></div></div><b>${naira(x.p*c)}</b></div>`}).join('');
+ $('#tv').textContent=naira(sum);tot.classList.remove('hidden');
+ $('#order').href=WA+'?text='+encodeURIComponent(msg+'Total: '+naira(sum));
+}
+function show(v){$('#home').classList.toggle('hidden',v!=='home');$('#store').classList.toggle('hidden',v!=='store');scrollTo(0,0)}
+
+/* ---------- auth + newsletter ---------- */
+async function post(url,body){
+ const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify(body)});
+ const d=await r.json().catch(()=>({}));
+ if(!r.ok)throw new Error(d.error||'Something went wrong. Please try again.');
+ return d;
+}
+function tab(t){
+ const up=t==='up';
+ $('#f-in').classList.toggle('hidden',up);$('#f-up').classList.toggle('hidden',!up);
+ $('#atitle').textContent=up?'Create your account':'Sign in';$('#aerr').classList.add('hidden');
+ for(const k of['in','up']){const b=$('#t-'+k),on=k===t;b.setAttribute('aria-selected',on);b.classList.toggle('bg-brand',on);b.classList.toggle('text-white',on);b.classList.toggle('text-mute',!on)}
+}
+function openAuth(t){tab(t);$('#auth').showModal()}
+async function go(e,url){
+ e.preventDefault();
+ const f=e.target,b=f.querySelector('[type=submit]'),err=$('#aerr'),label=b.textContent;
+ err.classList.add('hidden');b.disabled=true;b.textContent='Please wait…';
+ try{
+  const d=await post(url,Object.fromEntries(new FormData(f)));
+  $('#signin').textContent=(d.user&&d.user.full_name||'Account').split(' ')[0];
+  $('#auth').close();f.reset();
+ }catch(x){
+  err.textContent=x instanceof TypeError?'Can’t reach the server. Check your connection and try again.':x.message;
+  err.classList.remove('hidden');
+ }
+ b.disabled=false;b.textContent=label;
+}
+async function sub(e){
+ e.preventDefault();
+ const f=e.target,m=$('#nmsg'),b=f.querySelector('button');
+ b.disabled=true;m.textContent='';
+ try{await post('/api/newsletter',{email:f.email.value});m.textContent='You’re subscribed. Thank you!';f.reset()}
+ catch(x){m.textContent=x instanceof TypeError?'Can’t reach the server. Try again shortly.':x.message}
+ b.disabled=false;
+}
+
+/* ---------- init ---------- */
+$('#q').addEventListener('input',render);
+for(const d of document.querySelectorAll('dialog'))d.addEventListener('click',e=>{if(e.target===d)d.close()});
+icons();render();upd();tab('in');
+</script>
+</body>
+</html>
